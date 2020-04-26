@@ -3,10 +3,10 @@ import time
 
 class twitter_bot():
     def __init__(self):
-        self.consumer_key = "I7e3ZtcMdQwVa4byulsDg5vEL"
-        self.consumer_secret = "Xdpyh81PwdWKaVCLG9De42Is7rgEj0ciJL9Y7l3EEooDQXc9hY"
-        self.access_token = "1254353542976020482-kexf4KtMUFjkqYaG3SEcLujcUU9aTC"
-        self.access_token_secret = "kX7xFBgGFaERBbvjWDdW0X8K9EKR7IKZ2YayOBJrB6Rty"
+        self.consumer_key = ""
+        self.consumer_secret = ""
+        self.access_token = ""
+        self.access_token_secret = ""
         self.Tweet_Inicial = "Olá, sou o HaroldoBOT https://www.twitch.tv/lucasfernsilva"
         self.api= None
         self.array_rt= []
