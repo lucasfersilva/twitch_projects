@@ -30,7 +30,10 @@ class twitterBot():
         for tweet in public_tweets:
             if RC.filtro in tweet.text :
                 print(tweet.id)
+                # Retweeta e favorita o tweet que foi achado no filtro
                 self.api.retweet(tweet.id)
+                self.api.create_favorite(tweet.id)
+                # Adiciona ao array o tweet que foi retweetado e favoritado
                 self.array_rt.append(tweet.text)
                 if RC.filtro is None:
                     return "Não há filtro selecionado!"
